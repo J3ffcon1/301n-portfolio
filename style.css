@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade');
+
 body {
   background-color:  #e6e6e6
 }
@@ -7,11 +10,14 @@ a {
   display: block;
   width: 60px;
   padding: 5px;
+  font-family: 'Bungee', cursive;
+  color: black;
+  transition: all 0.15s ease-in-out;
 }
 
 a:hover {
   color:red;
-
+  transform: scale(1.1);
 }
 
 header {
@@ -19,4 +25,11 @@ header {
   padding-bottom: 10px;
   border-bottom: solid 2px #000000;
   display: inline;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 20px;
+  transition: all 0.20s ease-in-out;
+}
+header:hover{
+  color: red;
+  transform: scale(1.1);
 }
