@@ -33,6 +33,7 @@ header {
 header:hover{
   color: red;
   transform: scale(1.1);
+  font-size: 30px;
   text-decoration: none;
 
 }
