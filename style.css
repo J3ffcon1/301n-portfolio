@@ -1,0 +1,22 @@
+body {
+  background-color:  #e6e6e6
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  width: 60px;
+  padding: 5px;
+}
+
+a:hover {
+  color:red;
+
+}
+
+header {
+  text-decoration: underline;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #000000;
+  display: inline;
+}
