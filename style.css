@@ -27,7 +27,7 @@ header {
   display: inline;
   font-family: 'Bungee Shade', cursive;
   font-size: 20px;
-  transition: all 0.20s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 header:hover{
@@ -36,4 +36,8 @@ header:hover{
   font-size: 30px;
   text-decoration: none;
 
+}
+#social-bar::before, #social-bar::after {
+  content:"";
+  display: table;
 }
