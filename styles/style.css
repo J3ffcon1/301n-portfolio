@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
 @import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade');
+@import 'icon.css';
 
 body {
   background-color:  #e6e6e6
@@ -19,6 +20,35 @@ a:hover {
   color:red;
   transform: scale(1.1);
 }
+#nav-bar {
+  display: inline-block;
+  padding: 15px 0;
+}
+#social-bar {
+  display: inline-block;
+  padding: 15px 0;
+}
+
+.icon-menu {
+  float: left;
+  transform: scale(2,2);
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.menu ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.menu:hover ul  {
+  display: block;
+  transform: translateY(0%);
+   transition-delay: 0s, 0s, 0.3s;
+ }
+
 
 header {
   text-decoration: underline;
