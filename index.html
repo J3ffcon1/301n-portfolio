@@ -2,25 +2,57 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="app.js"></script>
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="styles/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="styles/base.css">
   <title>Jeff's Portfolio Webpage</title>
 </head>
 <body>
   <header>
     <h1>Jeff's Portfolio</h1>
   </header>
-  <nav class ="menu">
-
+  <nav id ="menu">
+    <!-- <div class ="nav-bar"> -->
       <span class="icon-menu"></span>
       <ul>
         <li><a href = "">Home</a></li>
         <li><a href ="">About</a></li>
-        <li><a href = "">Contact</a></li>
-        <li><a href = "">Other-Media</a></li>
-      </ul>
-  </nav>
-  <script src= "Module.js"></script>
-</body>
+        <li><a href = "">Projects</a></li>
+        <li id = "contact"><a href = "">Contact</a>
+          <ul>
+            <li><a href =""><span class="icon-github"></span> Github</a></li>
+            <li><a href =""><span class = "icon-mail4"></span> Email</a></li>
+            <li><a href = ""><span class="icon-facebook"></span> Facebook</a></li>
+          </ul>
+        </ul></li>
+    </nav>
+    <div id = "main">
+      <section id = "home">
+      </section>
 
-</html>
+      <section id ="about">
+      </section>
+
+      <section id ="projects">
+
+        <article class = "template project">
+          <h1>Project Title</h1>
+          <div class="course">
+            <p>Course Name</p>
+          </div>
+          <div class ="description">
+            <p>description</p>
+          </div>
+        </article>
+
+      </section>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src= "Module.js"></script> <!-- Put other Javascript files below JQuery file -->
+    <script src="app.js"></script>
+
+  </body>
+
+  </html>

@@ -9,7 +9,6 @@ body {
 a {
   display: block;
   text-decoration: none;
-  width: 100px;
   padding: 5px;
   font-family: 'Bungee', cursive;
   color: black;
@@ -23,10 +22,26 @@ a:hover {
 #nav-bar {
   display: inline-block;
   padding: 15px 0;
+  width: 150px;
 }
 #social-bar {
   display: inline-block;
   padding: 15px 0;
+}
+
+.project h1 {
+  font-family: 'Bungee Shade', sans-serif;
+  font-size: 25px;
+  padding-left: 100px;
+}
+
+.project p {
+  padding-left: 100px;
+  padding-top: 40px;
+  font-family: 'Bungee', sans-serif;
+}
+.course p {
+  font-family:
 }
 
 .icon-menu {
@@ -41,13 +56,34 @@ a:hover {
   padding: 0;
   list-style: none;
   clear: both;
+  width: 150px;
 }
 
 .menu:hover ul  {
   display: block;
   transform: translateY(0%);
-   transition-delay: 0s, 0s, 0.3s;
- }
+  transition-delay: 0s, 0s, 0.3s;
+}
+#contact-list {
+  padding-left: 30px;
+  display: none;
+}
+#contact:hover + #contact-list {
+  display: block;
+}
+
+#contact ul li{
+  display: none;
+}
+#contact:hover ul li{
+  display: block;
+  padding-left: 30px;
+}
+
+.template {
+  display: none;
+}
+
 
 
 header {
