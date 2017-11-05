@@ -22,7 +22,12 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-github:before {
+  content: "\eab0";
+}
 .icon-menu:before {
   content: "\e9bd";
 }

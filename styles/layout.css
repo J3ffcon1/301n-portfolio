@@ -1,0 +1,66 @@
+
+
+
+#menu {
+  margin: 0;
+  float: left;
+  display: inline-block;
+  width: 200px;
+}
+#main {
+  margin-left: 200px;
+  padding: 0px;
+}
+
+
+#contact-list {
+  padding-left: 30px;
+  display: none;
+}
+#contact:hover + #contact-list {
+  display: block;
+}
+
+#contact ul li{
+  display: none;
+}
+#contact:hover ul li{
+  display: block;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 400px) {
+  #menu {
+    margin: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  #main {
+    margin-left: 0px;
+    padding: 10px;
+  }
+  header {
+    height: 200px;
+    display: block;
+
+  }
+  header h1 {
+    /*viewport height*/
+    padding-top: 50px;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+  }
+  .icon-menu {
+    float: none;
+    font-size: 50px;
+    vertical-align: middle;
+    padding-left: none;
+
+  }
+  .icon-menu:before {
+    text-align: center;
+  }
+}
