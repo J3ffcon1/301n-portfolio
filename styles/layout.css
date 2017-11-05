@@ -47,7 +47,20 @@
   }
   header h1 {
     /*viewport height*/
+    padding-top: 50px;
     vertical-align: middle;
     display: inline-block;
+    font-size: 40px;
+    text-align: center;
+  }
+  .icon-menu {
+    float: none;
+    font-size: 50px;
+    vertical-align: middle;
+    padding-left: none;
+
+  }
+  .icon-menu:before {
+    text-align: center;
   }
 }

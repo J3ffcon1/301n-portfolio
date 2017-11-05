@@ -30,8 +30,9 @@ header {
   text-decoration: underline;
   padding-bottom: 10px;
   text-align:left;
+  padding-left: 20px;
   /*border-bottom: solid 2px #000000;*/
-  /*display: inline;*/
+  display: inline;
   font-family: 'Bungee Shade', cursive;
   font-size: 20px;
   transition: all 0.25s ease-in-out;
