@@ -25,6 +25,25 @@ a:hover {
   color:red;
   transform: scale(1.1);
 }
+#about-link a:hover {
+  color:orange;
+}
+#project-link a:hover {
+  color:yellow;
+}
+#contact a:hover {
+  color: green;
+}
+#github-link a:hover {
+  color: blue;
+}
+#email-link a:hover {
+  color: purple;
+}
+#facebook-link a:hover {
+  color: pink;
+}
+
 
 header {
   text-decoration: underline;

@@ -49,3 +49,14 @@
   content:"";
   display: table;
 }
+#projects {
+  transition: all 0.15s ease-in-out;
+}
+#projects:hover {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background: red;
+  color: white;
+  border-radius: 25px;
+}
