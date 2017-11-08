@@ -12,27 +12,24 @@
   </header>
   <nav id ="menu">
     <!-- <div class ="nav-bar"> -->
-      <span class="icon-menu"></span>
-      <ul>
-        <li><a href = "">Home</a></li>
-        <li><a href ="">About</a></li>
-        <li><a href = "">Projects</a></li>
-        <li id = "contact"><a href = "">Contact</a>
-          <ul>
-            <li><a href =""><span class="icon-github"></span> Github</a></li>
-            <li><a href =""><span class = "icon-mail4"></span> Email</a></li>
-            <li><a href = ""><span class="icon-facebook"></span> Facebook</a></li>
-          </ul>
-        </ul></li>
+    <span class="icon-menu"></span>
+    <ul>
+      <li id = "home-link " class = "tab" data-content = "home"><a href = "">Home</a></li>
+      <li id = "about-link" class = "tab" data-content = "about"><a href ="">About</a></li>
+      <li id = "project-link" class = "tab" data-content = "projects"><a href = "">Projects</a></li>
+      <li id = "contact"><a href = "">Contact</a>
+        <ul>
+          <li id ="github-link"><a href =""><span class="icon-github"></span> Github</a></li>
+          <li id ="email-link"><a href =""><span class = "icon-mail4"></span> Email</a></li>
+          <li id = "facebook-link"><a href = ""><span class="icon-facebook"></span> Facebook</a></li>
+        </ul>
+      </ul></li>
     </nav>
     <div id = "main">
-      <section id = "home">
+      <section id = "home" class = "tab-content">
       </section>
 
-      <section id ="about">
-      </section>
-
-      <section id ="projects">
+      <section id ="projects" class = "tab-content">
 
         <article class = "template project">
           <h1>Project Title</h1>
@@ -45,17 +42,27 @@
         </article>
 
       </section>
-    </div>
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    <script src= "Module.js"></script> <!-- Put other Javascript files below JQuery file -->
-    <script src="portfolioData.js"></script>
-    <script src="portfolio.js"></script>
 
+      <section id ="about" class = "tab-content">
+        <img src="">
+        <div class = "reflection">
+          <h1>About me</h1>
+          <p>my name is Jeffrey Lonergan, and I am currently a student
+            at Alchemy Code Lab, and hope this website, and the projects
+            showcased are a stepping stone to a new career in web development</p>
+          </section>
+        </div>
+      </div>
+      <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+      <!-- <script src= "Module.js"></script>  Put other Javascript files below JQuery file -->
+      <script src="portfolioData.js"></script>
+      <script src="portfolio.js"></script>
+      <script src = "pageView.js"></script>
+      <script>handleMainNav();</script>
 
+    </body>
 
-  </body>
-
-  </html>
+    </html>

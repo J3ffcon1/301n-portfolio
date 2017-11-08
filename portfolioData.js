@@ -3,22 +3,26 @@ var data = [
     title: 'Guessing-Game',
     course: 'Code 201',
     description: 'this project is a guessing game that uses javascript to quiz people on trivia questions about me.',
+    thumbnail: 'images/image_name',
   },
 
   {
     title: 'Cookie-stand',
     course:  'Code 201',
     description: 'Created a website for a cookie stand that uses randomly generated data to calculate totals of cookies sold for different store branches.',
+    thumbnail: 'images/image_name',
   },
 
   {
     title: 'Market Analysis App',
     course:  'Code 201',
     description: 'Use Canvas API to create a table that would show data aquired from a clicking test, which asks participants to click the image of a product which most appeals to them',
+    thumbnail: 'images/image_name',
   },
   {
     title: 'Stop and Drop',
     course: 'Code 201',
     description: 'Used Google API to create a crowdsourced app that locates restrooms, aimed at people who drive for a living or those who just need to find the closest bathroom',
+    thumbnail: 'images/image_name',
   }
 ];
