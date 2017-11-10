@@ -7,12 +7,15 @@ function Portfolioproject (project) {
 };
 
 Portfolioproject.prototype.toHtml = function () {
-  var $articleTemplate = $('.template').clone().removeClass('template');
-  $articleTemplate.find('h1').text(this.title);
-  $articleTemplate.find('.course p').text(this.course);
-  $articleTemplate.find('.description p').text(this.description);
+  var articleTemplate = $("#project-template").html();
+  var theTemplate = Handlebars.compile(articleTemplate);
+  // var $articleTemplate = $('.template').clone().removeClass('template');
+  // $articleTemplate.find('h1').text(this.title);
+  // $articleTemplate.find('.course p').text(this.course);
+  // $articleTemplate.find('.description p').text(this.description);
 
-  return $articleTemplate;
+  // return $articleTemplate;
+  return theTemplate(this);
 };
 
 data.forEach(function (data){
