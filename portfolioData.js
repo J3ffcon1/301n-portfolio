@@ -16,7 +16,7 @@ var data = [
   {
     title: 'Market Analysis App',
     course:  'Code 201',
-    description: 'Use Canvas API to create a table that would show data aquired from a clicking test, which asks participants to click the image of a product which most appeals to them',
+    description: 'Use Canvas API to create a table that would show data acquired from a clicking test, which asks participants to click the image of a product which most appeals to them',
     thumbnail: 'images/image_name',
   },
   {
