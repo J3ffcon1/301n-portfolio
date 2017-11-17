@@ -5,6 +5,7 @@ function Portfolioproject (project) {
   this.course = project.course;
   this.description = project.description;
 };
+Portfolio.all = [];
 
 Portfolioproject.prototype.toHtml = function () {
   var articleTemplate = $("#project-template").html();
@@ -22,3 +23,20 @@ data.forEach(function (data){
      var newArticle = new Portfolioproject(data);
     $('#projects').append(newArticle.toHtml());
   });
+
+  Portfolio.fetchAll =function () {
+    if (localStorage.project) {
+      Portfolioproject.loadAll(JSON.parse(localStorage.project));
+      portfolioView.initPage();
+
+    } else {
+      console.log("localStorage does not exist");
+      $getJSON("/data/portfolioJSON.json", function(data){
+        localStorage.setItem ('project', JSON.stringify(data));
+        Portfolioproject.loadAll(data);
+        portfolioView.initPage();
+      })
+    }
+
+
+  };

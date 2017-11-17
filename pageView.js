@@ -1,3 +1,5 @@
+var portfolioView = {};
+
 var handleMainNav = function() {
 console.log('called handleMainNav function');
 
@@ -10,4 +12,11 @@ $('#menu').on('click','.tab', function(event) {
 });
 
   $('.menu .tab:first').click(); // Let's now trigger a click on the first .tab element, to set up the page.
+};
+
+portfolioView.initPage = function() {
+  Portfolio.all.forEach(function(project) {
+    $('#projects').append(project.toHTML())
+
+  });  
 };
