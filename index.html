@@ -7,15 +7,15 @@
   <title>Jeff's Portfolio Webpage</title>
   <script id = "project-template" type ="text/x-handlebars-template">
 
-      <article class = "project">
-        <h1>{{title}}</h1>
-        <div class="course">
-          <p>{{course}}</p>
-        </div>
-        <div class ="description">
-          <p>{{description}}</p>
-        </div>
-      </article>
+    <article class = "project">
+      <h1>{{title}}</h1>
+      <div class="course">
+        <p>{{course}}</p>
+      </div>
+      <div class ="description">
+        <p>{{description}}</p>
+      </div>
+    </article>
 
   </script>
 </head>
@@ -45,44 +45,46 @@
 
 
 
-       <section id ="projects" class = "tab-content">
+      <section id ="projects" class = "tab-content">
 
         <!-- <article class = "template project">
-          <h1>Project Title</h1>
-          <div class="course">
-            <p>Course Name</p>
-          </div>
-          <div class ="description">
-            <p>description</p>
-          </div>
-        </article> -->
-
-      </section>
-
-      <section id ="about" class = "tab-content">
-        <img src="">
-        <div class = "reflection">
-          <h1>About me</h1>
-          <p>my name is Jeffrey Lonergan, and I am currently a student
-            at Alchemy Code Lab, and hope this website, and the projects
-            showcased are a stepping stone to a new career in web development</p>
-          </section>
-        </div>
+        <h1>Project Title</h1>
+        <div class="course">
+        <p>Course Name</p>
       </div>
-      <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script> <!-- JQuery CDN -->
-      <!-- <script src= "Module.js"></script>  Put other Javascript files below JQuery file -->
-      <script
-      <script src= "handlebars-v4.0.11.js"></script>
-      <script src="portfolioData.js"></script>
-      <script src="portfolio.js"></script>
-      <script src = "pageView.js"></script>
+      <div class ="description">
+      <p>description</p>
+    </div>
+  </article> -->
 
-      <script>handleMainNav();
-              initPage();</script>
+</section>
 
-    </body>
+<section id ="about" class = "tab-content">
+  <img src="">
+  <div class = "reflection">
+    <h1>About me</h1>
+    <p>my name is Jeffrey Lonergan, and I am currently a student
+      at Alchemy Code Lab, and hope this website, and the projects
+      showcased are a stepping stone to a new career in web development</p>
+    </section>
+  </div>
+</div>
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script> <!-- JQuery CDN -->
+<!-- <script src= "Module.js"></script>  Put other Javascript files below JQuery file -->
+<script
+<script src= "handlebars-v4.0.11.js"></script>
+<!-- <script src="portfolioData.js"></script> -->
+<script src="portfolio.js"></script>
+<script src = "pageView.js"></script>
 
-    </html>
+<script>
+handleMainNav();
+Portfolioproject.fetchAll();
+</script>
+
+</body>
+
+</html>
