@@ -22,7 +22,7 @@ Portfolioproject.fetchAll =function () {
 
   } else {
     console.log("localStorage does not exist");
-    $.getJSON("/data/portfolio.json", function(data){
+    $.getJSON("../data/portfolio.json", function(data){
       localStorage.setItem ('project', JSON.stringify(data));
       Portfolioproject.loadAll(data);
       portfolioView.initPage();
