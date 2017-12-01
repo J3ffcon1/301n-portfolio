@@ -1,7 +1,7 @@
-(function(module) {
 
-page('/home', homeController.index);
-page('/portfolio', portController.index);
-page('/about', aboutController.index);
+//route controllers
+page('/home', projController.index);
+page('/portfolio', projController.portfolio);
+page('/about', projController.about);
 
-})
+page(); // calls the page function

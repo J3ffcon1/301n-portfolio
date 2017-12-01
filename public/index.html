@@ -27,9 +27,9 @@
     <!-- <div class ="nav-bar"> -->
     <span class="icon-menu"></span>
     <ul>
-      <li id = "home-link " class = "tab" data-content = "home"><a href = "">Home</a></li>
-      <li id = "about-link" class = "tab" data-content = "about"><a href ="">About</a></li>
-      <li id = "project-link" class = "tab" data-content = "projects"><a href = "">Projects</a></li>
+      <li id = "home-link " class = "tab" data-content = "home"><a href = "/home">Home</a></li>
+      <li id = "about-link" class = "tab" data-content = "about"><a href ="/about">About</a></li>
+      <li id = "project-link" class = "tab" data-content = "projects"><a href = "/portfolio">Projects</a></li>
       <li id = "contact"><a href = "">Contact</a>
         <ul>
           <li id ="github-link"><a href =""><span class="icon-github"></span> Github</a></li>
@@ -77,13 +77,13 @@ crossorigin="anonymous"></script> <!-- JQuery CDN -->
 <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 <script src = "scripts/handlebars-v4.0.11.js"></script>
 <!-- <script src="portfolioData.js"></script> -->
+<script src= "scripts/controller/controller.js"></script>
 <script src ="scripts/routes.js" ></script>
-<script src= "controller/controller.js"></script>
 <script src="scripts/portfolio.js"></script>
 <script src = "scripts/pageView.js"></script>
 
 <script>
-handleMainNav();
+// handleMainNav();
 Portfolioproject.fetchAll();
 </script>
 
