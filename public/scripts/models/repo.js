@@ -14,7 +14,6 @@
         repos.all = results;
         callback();
       }
-
     )
   };
 

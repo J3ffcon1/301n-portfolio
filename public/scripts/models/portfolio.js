@@ -1,4 +1,4 @@
-
+(function(module) {
 //constructor function, that needs data to pass through in order to fill it in. referring to a single project.
 function Portfolioproject (project) {
   this.title = project.title;
@@ -37,3 +37,4 @@ Portfolioproject.loadAll= function(projects) {
     Portfolioproject.all.push(new Portfolioproject(project));
   })
 };
+} )(window);
