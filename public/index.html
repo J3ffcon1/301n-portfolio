@@ -18,6 +18,19 @@
     </article>
 
   </script>
+
+  <script id ="repo-template" type = "text/x-handlebars-template">
+    <article class = "repo">
+    <h1>Repo Name: {{full_name}}</h1>
+    <div class = "language">
+      <p>Programming language: {{language}}</p>
+    </div>
+    <div class = "updated">
+      <p>Updated: {{updated_at}}</p>
+    </div>
+  </article>
+
+  </script>
 </head>
 <body>
   <header>
@@ -75,12 +88,15 @@ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script> <!-- JQuery CDN -->
 <!-- <script src= "Module.js"></script>  Put other Javascript files below JQuery file -->
 <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-<script src = "scripts/handlebars-v4.0.11.js"></script>
+<script src = "vendor/scripts/handlebars-v4.0.11.js"></script>
 <!-- <script src="portfolioData.js"></script> -->
+
+<script src = "scripts/models/githubToken.js"></script>
+<script src = "scripts/models/repo.js"></script>
 <script src= "scripts/controller/controller.js"></script>
-<script src ="scripts/routes.js" ></script>
-<script src="scripts/portfolio.js"></script>
-<script src = "scripts/pageView.js"></script>
+<script src ="scripts/controller/routes.js" ></script>
+<script src="scripts/models/portfolio.js"></script>
+<script src = "scripts/views/pageView.js"></script>
 
 <script>
 // handleMainNav();
