@@ -1,26 +1,31 @@
 (function(module) {
-const projController = {};
+  const projController = {};
 
 
-projController.index = function() {
-  // portfolioView.initPage();
+  projController.index = function() {
+    // portfolioView.initPage();
+    $('.tab-content').hide();
+    $('#about').show();
+    $('#projects').show();
 
-  $('.tab-content').show();
+  }
 
+  projController.portfolio = function() {
+    portfolioView.initPage();
+    $('.tab-content').hide();
+    $('#projects').show();
 
-}
+  }
+  projController.repo = function() {
+    $('.tab-content').hide();
+    $('#repo-section').show();
 
-projController.portfolio = function() {
-  portfolioView.initPage();
-  $('.tab-content').hide();
-  $('#projects').show();
+  }
 
-}
+  projController.about = function() {
+    $('.tab-content').hide();
+    $('#about').show();
+  }
 
-projController.about = function() {
-  $('.tab-content').hide();
-  $('#about').show();
-}
-
- module.projController = projController;
+  module.projController = projController;
 })(window);

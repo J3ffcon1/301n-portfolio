@@ -40,9 +40,10 @@
     <!-- <div class ="nav-bar"> -->
     <span class="icon-menu"></span>
     <ul>
-      <li id = "home-link " class = "tab" data-content = "home"><a href = "/home">Home</a></li>
+      <li id = "home-link " class = "tab" data-content = "home"><a href = "/">Home</a></li>
       <li id = "about-link" class = "tab" data-content = "about"><a href ="/about">About</a></li>
       <li id = "project-link" class = "tab" data-content = "projects"><a href = "/portfolio">Projects</a></li>
+      <li id = "repo-link" class = "tab" data-content = "repo"><a href = "/repo">Repositories</a></li>
       <li id = "contact"><a href = "">Contact</a>
         <ul>
           <li id ="github-link"><a href =""><span class="icon-github"></span> Github</a></li>
@@ -72,6 +73,11 @@
 
 </section>
 
+<section id = "repo-section" class ="tab-content">
+
+
+</section>
+
 <section id ="about" class = "tab-content">
   <img src="">
   <div class = "reflection">
@@ -97,10 +103,12 @@ crossorigin="anonymous"></script> <!-- JQuery CDN -->
 <script src ="scripts/controller/routes.js" ></script>
 <script src="scripts/models/portfolio.js"></script>
 <script src = "scripts/views/pageView.js"></script>
+<script src = "scripts/views/repoView.js"></script>
 
 <script>
 // handleMainNav();
 Portfolioproject.fetchAll();
+repos.requestRepos(repoView.index);
 </script>
 
 </body>
