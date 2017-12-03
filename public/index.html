@@ -21,14 +21,14 @@
 
   <script id ="repo-template" type = "text/x-handlebars-template">
     <article class = "repo">
-    <h1>Repo Name: {{full_name}}</h1>
-    <div class = "language">
-      <p>Programming language: {{language}}</p>
-    </div>
-    <div class = "updated">
-      <p>Updated: {{updated_at}}</p>
-    </div>
-  </article>
+      <h1>Repo Name: {{full_name}}</h1>
+      <div class = "language">
+        <p>Programming language: {{language}}</p>
+      </div>
+      <div class = "updated">
+        <p>Updated: {{updated_at}}</p>
+      </div>
+    </article>
 
   </script>
 </head>
@@ -107,7 +107,7 @@ crossorigin="anonymous"></script> <!-- JQuery CDN -->
 
 <script>
 // handleMainNav();
-Portfolioproject.fetchAll();
+PortfolioProject.fetchAll();
 repos.requestRepos(repoView.index);
 </script>
 

@@ -1,9 +1,10 @@
 (function(module){
-var portfolioView = {};
+  var portfolioView = {};
 
-portfolioView.initPage = function() {
-  Portfolioproject.all.forEach(function(project){
-    $('#projects').append(project.toHtml())
-  });
-};
+  portfolioView.initPage = function() {
+    PortfolioProject.all.forEach(function(project){
+      $('#projects').append(project.toHtml())
+    });
+  };
+  module.portfolioView = portfolioView;
 })(window);
